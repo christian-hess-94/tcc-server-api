@@ -26,8 +26,8 @@ mongoose.connect(secret.database, options)
         console.log("Erro ao abrir o servidor:\n\n" + err);
     });
 
-app.listen("80", function () {
-    console.log("Server running on port 80");
+app.listen(secret.port, function () {
+    console.log("Server running on port " + secret.port);
 });
 
 consign()
