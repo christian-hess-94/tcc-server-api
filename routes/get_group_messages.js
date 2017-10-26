@@ -7,7 +7,7 @@ module.exports = function (application) {
     var Message = require("../models/MessageModel");
     var Group = require("../models/GroupModel");
 
-    application.post("/receive_group_sync", function (req, res) {
+    application.post("/get_group_messages", function (req, res) {
         var data = req.body;
 
         console.log(data);
